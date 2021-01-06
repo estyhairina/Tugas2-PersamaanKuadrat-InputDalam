@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pertemuan 11 : Tugas2</title>
+</head>
+
+<style>
+body {
+	background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+}
+div {
+	font-family: verdana;
+}
+
+
+</style>
+
+<body>
+	<h1> Menyelesaikan Persamaan Kuadratik </h1><hr>
+	<p>Tugas Kuliah Pemrograman Web <br> Nama&nbsp: Esty Hairina <br> NIM &nbsp : 1910131320007</p>
+	<p> Carilah kuadrat dari persamaan berikut x<sup>2</sup> + 5x - 14 = 0 </p>
+	<div>
+	<script>
+		var a=1, b=5, c=-14;
+		var det= Math.pow(b,2) - (4*a*c);
+		
+		if(det>0){
+			x1= (-b + Math.sqrt(det))/2*a;
+			x2= (-b - Math.sqrt(det))/2*a;
+		}
+		else{
+			window.alert("Nilai x1 dan x2 tidak dapat dihitung");
+		}
+			document.write("Diketahui :<br>a = "+a+"<br>")
+			document.write("b = "+b+"<br>")
+			document.write("c = "+c+"<br><br>")
+			document.write("Hasil : <br>")
+			document.write("Determinan = "+det+"<br>")
+			
+
+	</script>
+	</div>
+</body>
+</html>
